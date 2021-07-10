@@ -1,0 +1,23 @@
+{
+  "name": "app-test",
+  "version": "1.0.0",
+  "description": "Testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreiAlvarez/ninjaTest.git"
+  },
+  "author": "Andrei Alvarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreiAlvarez/ninjaTest/issues"
+  },
+  "homepage": "https://github.com/andreiAlvarez/ninjaTest#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "testcafe": "^1.15.0"
+  }
+}
