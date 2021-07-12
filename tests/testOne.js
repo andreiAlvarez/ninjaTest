@@ -10,6 +10,8 @@ const deviceCapacity = Selector("div.device-info span.device-capacity");
 const deviceEdit = Selector("div.device-options a.device-edit");
 const deviceRemove = Selector("div.device-options button.device-remove");
 
+// Get the list of devices, check the name, type and capacity of each element
+// and make sure they are correctly displayed.
 test("Test one", async (t) => {
   const { data } = await axios.get("http://localhost:3000/devices");
   devicesList = data;
