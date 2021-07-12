@@ -1,5 +1,4 @@
 import { Selector, ClientFunction } from "testcafe";
-import axios from "axios";
 
 fixture`tests`.page`http://localhost:3001/`;
 

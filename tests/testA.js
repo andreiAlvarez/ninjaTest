@@ -1,9 +1,8 @@
 import { Selector } from "testcafe";
-import axios from "axios";
+import { getDevicesList } from "../handlers";
 
 fixture`tests`.page`http://localhost:3001/`;
 
-let devicesList = {};
 const deviceName = Selector("div.device-info span.device-name");
 const deviceType = Selector("div.device-info span.device-type");
 const deviceCapacity = Selector("div.device-info span.device-capacity");
@@ -13,8 +12,7 @@ const deviceRemove = Selector("div.device-options button.device-remove");
 // Get the list of devices, check the name, type and capacity of each element
 // and make sure they are correctly displayed.
 test("Test one", async (t) => {
-  const { data } = await axios.get("http://localhost:3000/devices");
-  devicesList = data;
+  const devicesList = await getDevicesList();
   const deviceItem = devicesList.map(async (item) => {
     await t.expect(deviceName.withText(item.system_name).exists).eql(true);
     await t.expect(deviceType.withText(item.type).exists).eql(true);
