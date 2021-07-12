@@ -1,6 +1,6 @@
 # ninjaTest
 
-![testcafe](https://github.com/andreiAlvarez/the-ironhack-post-/blob/master/src/images/newspaperOne.png?raw=true)
+![testcafe](https://github.com/andreiAlvarez/ninjaTest/blob/main/images/testcafe-logo.png?raw=true)
 
 # Getting Started
 
